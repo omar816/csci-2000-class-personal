@@ -1,0 +1,10 @@
+(a) hello world
+(b) consents consented confers presents presented prefers prefered
+(c) Sat Oct 3 10:02:30 EDT 2015
+(d) oen
+(e) (The full calendar for year 2000)
+(f) The calendar for the September 1752 - it has days 3-13
+missing and is therefore incorrect
+(g) Shows the copywrite from the free software foundation and the years
+on which they were acted.
+(h) 9 (post-executing the mathematics)
