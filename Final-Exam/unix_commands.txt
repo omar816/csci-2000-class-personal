@@ -4,7 +4,11 @@
 # except the two header lines?
 # Enter the relevant Unix command(s) used below.
 
-
+# --First, I would personally check how many lines the file contains with the following code
+# then I would use the tail function to choose how many fewer lines I want
+wc -l classlist.csv
+#output is 132
+cat classlist.csv | tail -130
 
 
 # part (b)
@@ -13,7 +17,8 @@
 # Enter the relevant Unix command(s) used below as well as the number
 # of students in the list.
 
-
+cat classlist.csv | tail -130 | wc -l
+output is 130
 
 
 # part (c)
@@ -24,8 +29,9 @@
 # Enter the relevant Unix command(s) used below as well as the names
 # of the first and last students in the new list.
 
-
-
+sort -t: -k1,1 -k3 classlist.csv
+adam holte is 1st
+Zenia Mowrer is last
 
 # part (d)
 # Construct a Unix pipeline involving these functions to determine
@@ -33,11 +39,13 @@
 # repeated in the class list?
 # Enter the relevant name(s) and the Unix command(s) below.
 
-
-
+sort -t: -k1, -k2, -k3 | cat -k1 -l -u
+gets unique value 
 
 # part (f) [BONUS]
 # Construct a Unix pipeline that extracts the last three digits of
 # the student number and the first character of the first name to make
 # a four-character identifier for each student.
 # Enter the relevant Unix command(s) used below.
+
+cat -mindepth 6
